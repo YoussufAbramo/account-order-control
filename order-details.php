@@ -1,6 +1,14 @@
 <?php
 /*
 Template Name: Order Details
+ Theme Name:   Abramo
+ Theme URI:    http://abramo.xyz/
+ Description:  Abramo Child Theme
+ Author:       Abramo
+ Author URI:   http://Abramo.xyz
+ Template:     Abramo
+ Version:      1.0
+ Text Domain:  abramo-child
 */
 get_header();
 
@@ -17,12 +25,12 @@ if ($order_id) {
     echo '<div class="order-details-header">';
     echo '<h2>Order Details</h2>';
     echo '</div>';
-    
+
     echo '<p>Order Number: ' . esc_html($order->get_order_number()) . '</p>';
     echo '<p>Order Status: ' . esc_html(wc_get_order_status_name($order->get_status())) . '</p>';
     echo '<p>Order Total: ' . wc_price($order->get_total()) . '</p>';
 
-    
+
     // Output billing information
     echo '<h3>Billing Information</h3>';
     $billing_data = $order->get_address('billing');
@@ -63,8 +71,7 @@ if ($order_id) {
     // Display the "Mark as Complete" button with AJAX
     echo '<div id="mark-as-complete-container">';
     if (wc_get_order_status_name($order->get_status()) == 'Completed') {
-      echo '<p>This order is completed</p>';
-      echo '<button class="woocommerce-button button" disabled>Mark as Complete</button>';
+      echo '<b>This order is completed</b>';
     } else {
       echo '<button id="mark-as-complete-btn" class="woocommerce-button button">Mark as Complete</button>';
     }
@@ -74,7 +81,7 @@ if ($order_id) {
     // JavaScript to handle the button click event and perform AJAX request
 ?>
 
-<script src="/main.js"></script>
+    <script src="/main.js"></script>
 
 <?php
 

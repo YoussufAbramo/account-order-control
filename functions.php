@@ -1,5 +1,8 @@
 <?php
-function mark_order_complete() {
+// [Recommended] You can delete '<?php' line from this code
+// Mark Order As Completed
+function mark_order_complete()
+{
     $order_id = isset($_POST['order_id']) ? intval($_POST['order_id']) : 0;
 
     if ($order_id) {

@@ -1,6 +1,14 @@
 <?php
 /*
-Template Name: Orders List
+ Template Name: Orders List
+ Theme Name:   Abramo
+ Theme URI:    http://abramo.xyz/
+ Description:  Abramo Child Theme
+ Author:       Abramo
+ Author URI:   http://Abramo.xyz
+ Template:     Abramo
+ Version:      1.0
+ Text Domain:  abramo-child
 */
 get_header();
 

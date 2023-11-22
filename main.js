@@ -1,3 +1,15 @@
+/*
+ Template Name: Abramo main JavaScript
+ Theme Name:   Abramo
+ Theme URI:    http://abramo.xyz/
+ Description:  Abramo Child Theme
+ Author:       Abramo
+ Author URI:   http://Abramo.xyz
+ Template:     Abramo
+ Version:      1.0
+ Text Domain:  abramo-child
+*/
+
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('mark-as-complete-btn').addEventListener('click', function() {
     var xhr = new XMLHttpRequest();
@@ -7,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (xhr.status >= 200 && xhr.status < 400) {
         var response = JSON.parse(xhr.responseText);
         if (response.success) {
-          document.getElementById('mark-as-complete-container').innerHTML = '<p>Order marked as complete by: ' + response.username + '</p>';
+          document.getElementById('mark-as-complete-container').innerHTML = '<p>Order marked as completed by: ' + response.username + '</p>';
         } else {
           console.error(response.message);
         }

@@ -1,3 +1,15 @@
+/*
+ Template Name: Stylesheet
+ Theme Name:   Abramo
+ Theme URI:    http://abramo.xyz/
+ Description:  Abramo Child Theme
+ Author:       Abramo
+ Author URI:   http://Abramo.xyz
+ Template:     Abramo
+ Version:      1.0
+ Text Domain:  abramo-child
+*/
+
 /* Orders List Page */
 /* Style the overall container */
 .orders-container {
@@ -51,7 +63,8 @@
   margin-top: 10px;
 }
 
-.order-details-table th, .order-details-table td {
+.order-details-table th,
+.order-details-table td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
@@ -71,9 +84,6 @@
 .back-to-orders a:hover {
   text-decoration: underline;
 }
-
-
-
 
 /* Order Details Page */
 /* Overall container for order details */
@@ -102,7 +112,8 @@
   margin-top: 20px;
 }
 
-.order-details-table th, .order-details-table td {
+.order-details-table th,
+.order-details-table td {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: left;
