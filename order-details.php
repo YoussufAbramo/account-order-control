@@ -17,7 +17,7 @@ if ($order_id) {
     echo '<div class="order-details-header">';
     echo '<h2>Order Details</h2>';
     echo '</div>';
-    echo '<table class="order-details-table">';
+    
     echo '<p>Order Number: ' . esc_html($order->get_order_number()) . '</p>';
     echo '<p>Order Status: ' . esc_html(wc_get_order_status_name($order->get_status())) . '</p>';
     echo '<p>Order Total: ' . wc_price($order->get_total()) . '</p>';
@@ -71,34 +71,11 @@ if ($order_id) {
     echo '</table>';
     echo '</div>';
     echo '</div>';
-
     // JavaScript to handle the button click event and perform AJAX request
 ?>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById('mark-as-complete-btn').addEventListener('click', function() {
-          var xhr = new XMLHttpRequest();
-          xhr.open('POST', '<?php echo admin_url('admin-ajax.php'); ?>', true);
-          xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-          xhr.onload = function() {
-            if (xhr.status >= 200 && xhr.status < 400) {
-              var response = JSON.parse(xhr.responseText);
-              if (response.success) {
-                document.getElementById('mark-as-complete-container').innerHTML = '<p>Order marked as complete by: ' + response.username + '</p>';
-              } else {
-                console.error(response.message);
-              }
-            } else {
-              console.error('Request failed');
-            }
-          };
-          xhr.onerror = function() {
-            console.error('Request failed');
-          };
-          xhr.send('action=mark_order_complete&order_id=<?php echo $order_id; ?>');
-        });
-      });
-    </script>
+
+<script src="/main.js"></script>
+
 <?php
 
   } else {
