@@ -2,8 +2,8 @@
 
 # About
 
--Developer : Youssuf Abramo
--Contact : https://bit.ly/m/abramo
++ Developer : Youssuf Abramo
++ Contact :  [Click Here](https://bit.ly/m/abramo) to contact me 
 
 # Description
 
@@ -11,7 +11,8 @@ This Plugin makes specific group of user roles have access to view WooCommerce o
 
 # How To Use
 
-[Before do anything please take backup from your website]
+> [!WARNING]
+> Before do anything please take backup from your website
 
 1. Navigate your child theme directory `/wp-content/themes/child-theme/`.
 2. Copy and paste these two files, `orders-list.php` and `order-details.php` and rename them as you prefer.
@@ -21,6 +22,7 @@ This Plugin makes specific group of user roles have access to view WooCommerce o
 6. Now last step, from the same list of theme file editor, click on stylesheet `style.css` and paste the `style.css` code inside it, if you see any code inside the file you must keep it and add my code below or above it, this to avoid any damage on the default theme style.
 
 # How To Enable Theme File Editor
+
 1. Check if the `DISALLOW_FILE_EDIT` constant is defined in your `wp-config.php` file.
 2. Go to your root directory and open the code of `wp-config.php` file.
 3. Press from your keyboard on `Ctrl + F` to search on page, then type `DISALLOW_FILE_EDIT`.
