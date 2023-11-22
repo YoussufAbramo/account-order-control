@@ -25,8 +25,8 @@ This Plugin makes specific group of user roles have access to view WooCommerce o
 5. Select your child theme folder, and click on `function.php` and paste my code below the written code.
 6. Now last step, from the same list of theme file editor, click on stylesheet `style.css` and paste the `style.css` code inside it, if you see any code inside the file you must keep it and add my code below or above it, this to avoid any damage on the default theme style.
 7. Go back again to your child theme directory and create `main.js` and copy and paste from the inserted file in this repo into your file.
-- > [!CAUTION]
-- > This step could not work in rare cases, if that happened, simply copy the JavaScript code and open your `order-details.php` file and replace your code with this line `<script src="/main.js"></script>` also do not forget to add the code inside `<script></script>` tag.
+> [!CAUTION]
+> This step could not work in rare cases, if that happened, simply copy the JavaScript code and open your `order-details.php` file and replace your code with this line `<script src="/main.js"></script>` also do not forget to add the code inside `<script></script>` tag.
 
 ## How To Enable Theme File Editor
 
