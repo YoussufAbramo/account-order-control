@@ -1,0 +1,123 @@
+/* Orders List Page */
+/* Style the overall container */
+.orders-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Style the order items section */
+.order-items {
+  margin-top: 20px;
+}
+
+.order-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* Style order details */
+.order-details {
+  margin-top: 20px;
+}
+
+.order-detail {
+  margin-bottom: 15px;
+}
+
+/* Style the "View Details" button */
+.view-details-btn {
+  background-color: rgb(199, 221, 255);
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Hover effect for the button */
+.view-details-btn:hover {
+  background-color: #61b0ff;
+}
+
+/* Style the table for order details */
+.order-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.order-details-table th, .order-details-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Style the "Back to Orders" link */
+.back-to-orders {
+  margin-top: 20px;
+  display: block;
+}
+
+.back-to-orders a {
+  color: #0073aa;
+  text-decoration: none;
+}
+
+.back-to-orders a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Order Details Page */
+/* Overall container for order details */
+.order-details-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Order details header */
+.order-details-header {
+  margin-bottom: 20px;
+}
+
+.order-details-header h2 {
+  color: #333;
+}
+
+/* Table for displaying order details */
+.order-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.order-details-table th, .order-details-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style for "Back to Orders" link */
+.back-to-orders {
+  margin-top: 20px;
+}
+
+.back-to-orders a {
+  color: #0073aa;
+  text-decoration: none;
+}
+
+.back-to-orders a:hover {
+  text-decoration: underline;
+}
